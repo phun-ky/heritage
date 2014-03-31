@@ -1,0 +1,26 @@
+{
+  "name": "heritage",
+  "version": "0.0.0",
+  "authors": [
+    "Alexander Vassbotn Røyne-Helgesen <alexander@phun-ky.net>"
+  ],
+  "description": "Yet another genealogy client",
+  "main": "index.html",
+  "keywords": [
+    "heritage",
+    "genealogy"
+  ],
+  "license": "GPL v3",
+  "homepage": "http://phun-ky.net/heritage",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.0"
+  }
+}

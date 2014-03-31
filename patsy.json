@@ -1,0 +1,66 @@
+{
+  "project": {
+    "details": {
+      "name": "heritage",
+      "homepage": "https://github.com/phun-ky/heritage",
+      "author": "Alexander Vassbotn Røyne-Helgesen <alexander@phun-ky.net>"
+    },
+    "environment": {
+      "root": "sdc-loader",
+      "abs_path": "/home/alexander/Workspace/heritage/",
+      "web_root": "",
+      "port": 80,
+      "host": "localhost",
+      "home_file": "index.html"
+    },
+    "options": {
+      "watch_config": false,
+      "reload": true,
+      "reload_port" : 35733
+    }
+  },
+  "build": {
+    "js": [
+      "bower_components/jquery/dist/jquery.js",
+      "!node_modules/**/*.js"
+    ],
+    "min": {
+      "dest": "heritage.js",
+      "options": {
+          "mangle": false,
+          "beautify" : true,
+          "report" : false,
+          "sourceMap" : true
+      }
+    },
+    "lint": {
+      "src" : [
+      "js/app/src/**/*.js",
+      "js/app/src/*.js"
+      ],
+      "options" : {
+        "white" : false,
+        "passfail": true
+      }
+    },
+    "options": {
+      "watch": true,
+      "verbose": true,
+      "testsOnWatch": false,
+      "linting": true,
+      "force": true
+    }
+  },
+  "fileserver": {
+    "host": "localhost",
+    "port": 80,
+    "options": {
+      "verbose": true
+    }
+  },
+  "options": {
+    "verbose": true,
+    "logToFile": false,
+    "scripture": true
+  }
+}
